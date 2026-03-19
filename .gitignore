@@ -1,0 +1,42 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Distribution / packaging
+bin/
+build/
+develop-eggs/
+dist/
+eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual Environment
+venv/
+ENV/
+env/
+.env
+Include/
+Lib/
+Scripts/
+pyvenv.cfg
+
+# Project-specific
+.agent803/
+knowledge_graph.json
+test_output.txt
+report.md
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo

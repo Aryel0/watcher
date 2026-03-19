@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "watcher"
+version = "0.1.0"
+description = "A semantic codebase analyst with local history and real-time visualization."
+authors = [{ name = "Agent803 User", email = "user@example.com" }]
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+]
+dependencies = ["watchdog>=4.0.0", "textual>=0.40.0"]
+
+[project.scripts]
+watcher = "watcher.cli:main"
+watcher-tui = "watcher.tui:main"
+watcher-service = "watcher.watcher_service:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["watcher*"]
